@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  react-js-admin-dashboard:
+    container_name: 'react-js-admin-dashboard'
+    build:
+      context: "."
+      dockerfile: Dockerfile
+    image: "react-js-admin-dashboard:1.0.0"
+    environment:
+      - "NODE_ENV=development"
+    ports:
+      - protocol: tcp
+        published: 3000
+        target: 80
+    volumes:
+      - .:/app/
+      - /app/node_modules
+    command: npm run dev
