@@ -41,8 +41,13 @@ This is a [React.js](https://react.dev) with [Vite](https://vitejs.dev).
 
 - masuk ke dalam container
 
-      docker exec -i -t react-js-admin-dashboard /bin/bash
+      docker exec -i -t react-js-admin-dashboard /bin/sh
 
 - list file
 
       ls -al
+
+## Donasi
+
+- jika kalian suka dengan projek saya dan ingin support saya, bisa donasi via transfer
+  - Jago/Jago Syariah bank digital 5055-6459-9169
