@@ -1,5 +1,9 @@
 # Release Notes
 
+## v1.0.3 (2024-02-21)
+
+- daisyui
+
 ## v1.0.2 (2024-02-21)
 
 - tailwindcss
