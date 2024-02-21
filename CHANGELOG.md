@@ -1,8 +1,8 @@
 # Release Notes
 
-## v1.0.1 (2023-08-11)
+## v1.0.1 (2024-02-21)
 
-- docker compose
+- change from typescript to javascript
 
 ## v1.0.0 (2023-07-07)
 

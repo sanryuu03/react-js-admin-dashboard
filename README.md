@@ -1,48 +1,8 @@
-This is a [React.js](https://react.dev) with [Vite](https://vitejs.dev).
+# React + Vite
 
-# Penggunaan
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-- build
+Currently, two official plugins are available:
 
-      docker compose build
-
-- create
-
-      docker compose create
-
-- start
-
-      docker compose start
-
-- one line => Builds, (re)creates, starts, and attaches to containers for a service.
-
-      docker compose up
-      docker compose up -d => --detach , -d		Detached mode: Run containers in the background
-
-- cek image
-
-      docker image ls
-      atau menggunakan group
-      docker image ls | grep nama => docker image ls | grep react-js
-
-- cek container
-
-      docker container ls -a
-      atau
-      docker compose ps
-
-- stop
-
-      docker compose down
-
-- hapus image
-
-      docker image rm IMAGE ID
-
-- masuk ke dalam container
-
-      docker exec -i -t react-js-admin-dashboard /bin/bash
-
-- list file
-
-      ls -al
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
