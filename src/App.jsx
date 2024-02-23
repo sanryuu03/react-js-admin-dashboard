@@ -3,7 +3,7 @@ function App() {
     <>
       <div className="navbar bg-base-100">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="text-xl btn btn-ghost">daisyUI</a>
         </div>
         <div className="flex-none">
           <div className="dropdown dropdown-end">
@@ -15,7 +15,7 @@ function App() {
               <div className="indicator">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="w-5 h-5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -35,7 +35,7 @@ function App() {
               className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow"
             >
               <div className="card-body">
-                <span className="font-bold text-lg">8 Items</span>
+                <span className="text-lg font-bold">8 Items</span>
                 <span className="text-info">Subtotal: $999</span>
                 <div className="card-actions">
                   <button className="btn btn-primary btn-block">
@@ -79,18 +79,36 @@ function App() {
         </div>
       </div>
 
-      {/* Responsive Sidebar Layout */}
-      <div className="flex min-h-screen flex-row bg-gray-100 text-gray-800">
-        <aside className="sidebar w-48 -translate-x-full transform bg-white p-4 transition-transform duration-150 ease-in md:translate-x-0 md:shadow-md">
-          <div className="my-4 w-full border-b-4 border-indigo-100 text-center">
-            <span className="font-mono text-xl font-bold tracking-widest">
-              <span className="text-indigo-600">HELLO</span> DEV
-            </span>
+      {/* Sidebar Layout */}
+      <div className="flex min-h-screen gap-4 p-3 text-gray-800 bg-gray-100">
+        <aside>
+          <div className="shadow-xl card w-72 bg-base-100">
+            <div className="card-body">
+              <h2 className="card-title">Master</h2>
+              <button className="btn btn-ghost btn-xs justify-normal">
+                data a
+              </button>
+              <details className="dropdown">
+                <summary className="btn btn-ghost btn-xs">
+                  open or close
+                </summary>
+                <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                  <li>
+                    <a>Item 1</a>
+                  </li>
+                  <li>
+                    <a>Item 2</a>
+                  </li>
+                </ul>
+              </details>
+              <button className="btn btn-ghost btn-xs justify-normal">
+                data c
+              </button>
+            </div>
           </div>
-          <div className="my-4"></div>
         </aside>
-        <main className="main -ml-48 flex flex-grow flex-col p-4 transition-all duration-150 ease-in md:ml-0">
-          <div className="h-full bg-white text-5xl font-bold shadow-md">
+        <main className="w-full">
+          <div className="h-full text-5xl font-bold bg-white shadow-md">
             Content
             <h1 className="text-3xl font-bold underline">Hello world!</h1>
           </div>

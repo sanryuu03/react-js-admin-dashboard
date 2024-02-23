@@ -1,5 +1,9 @@
 # Release Notes
 
+## v1.0.5 (2024-02-23)
+
+- daisyui navbar + daisyui Sidebar Layout
+
 ## v1.0.4 (2024-02-21)
 
 - daisyui navbar + Responsive Sidebar Layout native
